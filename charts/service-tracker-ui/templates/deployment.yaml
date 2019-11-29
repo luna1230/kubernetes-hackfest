@@ -12,7 +12,7 @@ spec:
         app: service-tracker-ui
     spec:
       containers:
-        - image: "{{.Values.deploy.acrServer}}/hackfest/service-tracker-ui:{{.Values.deploy.imageTag}}"
+        - image: "{{.Values.deploy.acrServer}}/service-tracker-ui:{{.Values.deploy.imageTag}}"
           imagePullPolicy: Always
           name: service-tracker-ui
           resources:
